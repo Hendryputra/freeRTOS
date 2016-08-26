@@ -1,0 +1,669 @@
+Archive member included because of file (symbol)
+
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+                              ../../modul/FreeRTOS_Source/queue.o (memcpy)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memset.o)
+                              ../../modul/FreeRTOS_Source/tasks.o (memset)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o)
+                              ../../hardware/system/reset_cpu.o (puts)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strlen.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o) (strlen)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strncpy.o)
+                              ../../modul/FreeRTOS_Source/tasks.o (strncpy)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o) (__sfvwrite)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o) (_impure_ptr)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memchr.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o) (memchr)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memmove.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o) (memmove)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o) (_realloc_r)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o) (__swsetup)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fflush.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o) (fflush)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o) (__sinit)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(freer.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o) (_free_r)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fwalk.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fflush.o) (_fwalk)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(makebuf.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o) (__smakebuf)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o) (_malloc_r)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mlock.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o) (__malloc_lock)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(stdio.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o) (__sclose)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(makebuf.o) (isatty)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o) (__errno)
+/home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+                              /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o) (fclose)
+
+Allocating common symbols
+Common symbol       size              file
+
+loop_idle           0x4               main.o
+hdl_relay           0x4               ../../app/ap_led1.o
+hdl_led             0x4               main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x00000000         0x0007d000
+ram              0x40000000         0x0000ffe0
+usbram           0x7fd00000         0x00002000
+ethram           0x7fe00000         0x00004000
+rtcram           0xe0084000         0x00000400
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../../modul/FreeRTOS_Source/portable/GCC/ARM7_LPC23xx/portISR.o
+LOAD ../../modul/GPIO/gpio_ISR.o
+LOAD main.o
+LOAD ../../hardware/hardware.o
+LOAD ../../hardware/sys.o
+LOAD ../../hardware/system/setup_cpu.o
+LOAD ../../hardware/system/syscall.o
+LOAD ../../hardware/system/reset_cpu.o
+LOAD ../../hardware/system/idle_hook.o
+LOAD ../../modul/FreeRTOS_Source/queue.o
+LOAD ../../modul/FreeRTOS_Source/tasks.o
+LOAD ../../modul/FreeRTOS_Source/portable/GCC/ARM7_LPC23xx/port.o
+LOAD ../../modul/FreeRTOS_Source/list.o
+LOAD ../../modul/FreeRTOS_Source/portable/MemMang/heap_2.o
+LOAD ../../modul/GPIO/gpio.o
+LOAD ../../app/ap_led1.o
+LOAD /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/thumb/interwork/libgcc.a
+LOAD /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libm.a
+LOAD /tmp/cchVEwuh.o
+START GROUP
+LOAD /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/thumb/interwork/libgcc.a
+LOAD /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a
+END GROUP
+                0x40007ffc                __stack_end__ = 0x40007ffc
+                0x00000000                . = 0x0
+
+startup         0x00000000       0x44
+ *(.startup)
+ .startup       0x00000000       0x44 /tmp/cchVEwuh.o
+
+prog            0x00000044     0x44fc
+ *(.text)
+ .text          0x00000044      0x274 ../../modul/FreeRTOS_Source/portable/GCC/ARM7_LPC23xx/portISR.o
+                0x00000260                vPortExitCritical
+                0x00000090                vPortYieldProcessor
+                0x00000200                vPortDisableInterruptsFromThumb
+                0x0000013c                vNonPreemptiveTick
+                0x00000044                vPortISRStartFirstTask
+                0x00000218                vPortEnableInterruptsFromThumb
+                0x00000230                vPortEnterCritical
+ .text          0x000002b8       0xcc main.o
+                0x0000033c                init_led_utama
+                0x000002b8                main
+                0x00000300                IdleTaskHook
+ .text          0x00000384       0x68 ../../hardware/hardware.o
+                0x00000384                setup_hardware
+                0x000003ac                init_hardware
+                0x000003b8                dele
+ .text          0x000003ec       0xbc ../../hardware/sys.o
+                0x000003ec                init_PLLnya
+ .text          0x000004a8      0x2c0 ../../hardware/system/setup_cpu.o
+                0x00000564                ubah_clk
+                0x0000066c                sysInit
+ .text          0x00000768      0x154 ../../hardware/system/syscall.o
+                0x0000082c                _lseek_r
+                0x0000084c                _fstat_r
+                0x0000087c                _sbrk_r
+                0x00000768                _read_r
+                0x0000086c                _isatty
+                0x00000818                _close_r
+                0x000007f4                _write_r
+ .text          0x000008bc       0x78 ../../hardware/system/reset_cpu.o
+                0x00000920                tendang_wdog
+                0x000008bc                reset_cpu
+                0x000008f4                setup_wdog
+ .text          0x00000934       0x10 ../../hardware/system/idle_hook.o
+                0x00000934                vApplicationIdleHook
+ .text          0x00000944      0x95c ../../modul/FreeRTOS_Source/queue.o
+                0x00000c40                xQueueGenericSendFromISR
+                0x00000944                xQueueCreate
+                0x00000f94                vQueueDelete
+                0x00000ad8                xQueueGenericSend
+                0x00000eb8                xQueueReceiveFromISR
+                0x0000126c                xQueueIsQueueFullFromISR
+                0x00000f50                uxQueueMessagesWaiting
+                0x00000cd8                xQueueGenericReceive
+                0x00000f78                uxQueueMessagesWaitingFromISR
+                0x00001200                xQueueIsQueueEmptyFromISR
+                0x00000a40                xQueueCreateMutex
+ .text          0x000012a0      0xe08 ../../modul/FreeRTOS_Source/tasks.o
+                0x00001758                vTaskEndScheduler
+                0x00001a94                vTaskPlaceOnEventList
+                0x00001538                xTaskIsTaskSuspended
+                0x00001ed8                uxTaskGetStackHighWaterMark
+                0x00001634                xTaskResumeFromISR
+                0x000018a8                xTaskGetTickCount
+                0x00001b40                xTaskRemoveFromEventList
+                0x00001c40                xTaskCheckForTimeOut
+                0x00001770                vTaskSuspendAll
+                0x0000200c                vTaskPriorityDisinherit
+                0x00001f48                vTaskPriorityInherit
+                0x0000158c                vTaskResume
+                0x000019f4                vTaskSwitchContext
+                0x000014b0                vTaskSuspend
+                0x000018cc                uxTaskGetNumberOfTasks
+                0x000018f0                vTaskIncrementTick
+                0x00001f24                xTaskGetCurrentTaskHandle
+                0x00001e98                usTaskCheckFreeStackSpace
+                0x0000178c                xTaskResumeAll
+                0x00001700                vTaskStartScheduler
+                0x00001ce8                vTaskMissedYield
+                0x000012a0                xTaskCreate
+                0x00001414                vTaskDelay
+                0x00001c18                vTaskSetTimeOutState
+ .text          0x000020a8      0x240 ../../modul/FreeRTOS_Source/portable/GCC/ARM7_LPC23xx/port.o
+                0x00002250                xPortStartScheduler
+                0x00002264                vPortEndScheduler
+                0x000020a8                pxPortInitialiseStack
+ .text          0x000022e8      0x1bc ../../modul/FreeRTOS_Source/list.o
+                0x00002344                vListInsertEnd
+                0x00002444                vListRemove
+                0x00002330                vListInitialiseItem
+                0x000022e8                vListInitialise
+                0x000023ac                vListInsert
+ .text          0x000024a4      0x23c ../../modul/FreeRTOS_Source/portable/MemMang/heap_2.o
+                0x00002654                vPortFree
+                0x000024a4                pvPortMalloc
+ .text          0x000026e0       0x68 ../../app/ap_led1.o
+                0x00002714                init_relay
+ .text          0x00002748       0x64 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+                0x00002748                memcpy
+ .text          0x000027ac       0x64 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memset.o)
+                0x000027ac                memset
+ .text          0x00002810       0x5c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o)
+                0x00002810                _puts_r
+                0x00002858                puts
+ .text          0x0000286c       0x50 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strlen.o)
+                0x0000286c                strlen
+ .text          0x000028bc       0x88 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strncpy.o)
+                0x000028bc                strncpy
+ .text          0x00002944      0x298 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o)
+                0x00002944                __sfvwrite
+ .text          0x00002bdc       0xbc /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memchr.o)
+                0x00002bdc                memchr
+ .text          0x00002c98       0x8c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memmove.o)
+                0x00002c98                memmove
+ .text          0x00002d24      0x3d8 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o)
+                0x00002d24                _realloc_r
+ .text          0x000030fc       0xa0 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o)
+                0x000030fc                __swsetup
+ .text          0x0000319c       0x90 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fflush.o)
+                0x0000319c                fflush
+ .text          0x0000322c      0x1c4 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o)
+                0x00003274                __sinit
+                0x0000332c                __sfmoreglue
+                0x00003318                _cleanup
+                0x00003308                _cleanup_r
+                0x000032f0                __fp_lock_all
+                0x00003264                __sfp_lock_acquire
+                0x00003364                __sfp
+                0x00003270                __sinit_lock_release
+                0x000032d8                __fp_unlock_all
+                0x00003268                __sfp_lock_release
+                0x0000326c                __sinit_lock_acquire
+ .text          0x000033f0      0x268 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(freer.o)
+                0x00003490                _free_r
+                0x000033f0                _malloc_trim_r
+ .text          0x00003658       0xf0 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fwalk.o)
+                0x000036d0                _fwalk
+                0x00003658                _fwalk_reent
+ .text          0x00003748       0xdc /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(makebuf.o)
+                0x00003748                __smakebuf
+ .text          0x00003824      0x538 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+                0x00003824                _malloc_r
+ .text          0x00003d5c        0x8 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mlock.o)
+                0x00003d60                __malloc_unlock
+                0x00003d5c                __malloc_lock
+ .text          0x00003d64       0xd8 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(stdio.o)
+                0x00003d7c                __sseek
+                0x00003e04                __sread
+                0x00003d64                __sclose
+                0x00003dbc                __swrite
+ .text          0x00003e3c      0x504 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+                0x00003e58                _getpid
+                0x00003f4c                initialise_monitor_handles
+                0x00003e70                isatty
+                0x00003ed8                _fstat
+                0x0000426c                _open
+                0x00003ea0                _sbrk
+                0x00003e6c                _raise
+                0x00003fd4                _times
+                0x00004280                _stat
+                0x000042bc                _lseek
+                0x00003e5c                _link
+                0x00004090                _swiwrite
+                0x00003e74                _rename
+                0x000040b8                _swilseek
+                0x00004058                _swiclose
+                0x0000416c                _swiopen
+                0x00003e64                _unlink
+                0x000041f8                _write
+                0x00004024                _kill
+                0x00003ff8                _gettimeofday
+                0x000042f4                _read
+                0x00004040                _exit
+                0x00003e88                _system
+                0x000042cc                _swiread
+                0x0000425c                _close
+ .text          0x00004340        0xc /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+                0x00004340                __errno
+ .text          0x0000434c       0xbc /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+                0x0000434c                _fclose_r
+                0x000043f0                fclose
+ .text          0x00004408       0xb8 /tmp/cchVEwuh.o
+                0x00004408                start
+                0x000044a4                endless_loop
+ *(.rodata)
+ .rodata        0x000044c0        0x4 main.o
+ .rodata        0x000044c4       0x14 ../../hardware/system/reset_cpu.o
+ .rodata        0x000044d8        0x8 ../../modul/FreeRTOS_Source/tasks.o
+ .rodata        0x000044e0        0x2 ../../modul/FreeRTOS_Source/portable/MemMang/heap_2.o
+ *fill*         0x000044e2        0x2 00
+ .rodata        0x000044e4        0x8 ../../app/ap_led1.o
+ .rodata        0x000044ec        0x4 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                0x000044ec                _global_impure_ptr
+ *(.rodata*)
+ .rodata.str1.4
+                0x000044f0        0x2 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o)
+                                  0x4 (size before relaxing)
+ *fill*         0x000044f2        0x2 00
+ .rodata.str1.4
+                0x000044f4        0x2 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                                  0x4 (size before relaxing)
+ *fill*         0x000044f6        0x2 00
+ .rodata.str1.4
+                0x000044f8        0x4 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+ *(.glue_7)
+ .glue_7        0x000044fc       0x24 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+                0x00004514                __main_from_arm
+                0x00004508                __vTaskIncrementTick_from_arm
+                0x000044fc                __vTaskSwitchContext_from_arm
+ *(.glue_7t)
+ .glue_7t       0x00004520       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+                0x00004524                __vPortEnterCritical_change_to_arm
+                0x0000452c                __vPortExitCritical_change_to_arm
+                0x00004538                __vPortISRStartFirstTask_from_thumb
+                0x00004530                __vPortDisableInterruptsFromThumb_from_thumb
+                0x00004528                __vPortExitCritical_from_thumb
+                0x00004520                __vPortEnterCritical_from_thumb
+                0x0000453c                __vPortISRStartFirstTask_change_to_arm
+                0x00004534                __vPortDisableInterruptsFromThumb_change_to_arm
+ *(.lokasi_font)
+                0x00004540                __end_of_text__ = .
+                0x00004540                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00004540                __exidx_end = .
+
+.data           0x40000000      0x818 load address 0x00004540
+                0x40000000                __data_beg__ = .
+                0x00004540                __data_beg_src__ = __end_of_text__
+ *(.data)
+ .data          0x40000000        0x4 ../../modul/FreeRTOS_Source/portable/GCC/ARM7_LPC23xx/portISR.o
+                0x40000000                ulCriticalNesting
+ .data          0x40000004      0x404 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                0x40000004                _impure_ptr
+ .data          0x40000408      0x410 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+                0x40000814                __malloc_sbrk_base
+                0x40000408                __malloc_av_
+                0x40000810                __malloc_trim_threshold
+                0x40000818                __data_end__ = .
+
+.bss            0x40000818     0xb8b0
+                0x40000818                __bss_beg__ = .
+ *(.bss)
+ .bss           0x40000818        0x4 ../../hardware/system/syscall.o
+ .bss           0x4000081c       0xd4 ../../modul/FreeRTOS_Source/tasks.o
+                0x40000820                pxCurrentTCB
+                0x4000081c                tick_ku
+ .bss           0x400008f0     0xb6e8 ../../modul/FreeRTOS_Source/portable/MemMang/heap_2.o
+ .bss           0x4000bfd8       0x34 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+                0x4000bfd8                __malloc_top_pad
+                0x4000bfdc                __malloc_max_sbrked_mem
+                0x4000bfe4                __malloc_current_mallinfo
+                0x4000bfe0                __malloc_max_total_mem
+ .bss           0x4000c00c       0xb0 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+ COMMON         0x4000c0bc        0x8 main.o
+                0x4000c0bc                loop_idle
+                0x4000c0c0                hdl_led
+ COMMON         0x4000c0c4        0x4 ../../app/ap_led1.o
+                0x4000c0c4                hdl_relay
+                0x4000c0c8                . = ALIGN (0x4)
+                0x4000c0c8                _bss_end__ = .
+                0x4000c0c8                __bss_end__ = .
+                0x4000c0c8                __end__ = .
+
+.usbram         0x7fd00000        0x0
+                0x7fd00000                __usbram_beg__ = .
+ *(.index_text)
+                0x7fd00000                __usbram_end__ = .
+
+.ethram         0x7fe00000        0x0
+                0x7fe00000                __ethram_beg__ = .
+ *(.ethram)
+ *(.eth_test_text)
+ *(.eth_test)
+                0x7fe00000                __ethram_end__ = .
+                0x7fe00000                . = ALIGN (0x4)
+                0x7fe00000                _end = .
+                0x7fe00000                PROVIDE (end, .)
+OUTPUT(Blink.elf elf32-littlearm)
+
+.comment        0x00000000      0x2ac
+ .comment       0x00000000       0x12 ../../modul/FreeRTOS_Source/portable/GCC/ARM7_LPC23xx/portISR.o
+ .comment       0x00000012       0x12 ../../modul/GPIO/gpio_ISR.o
+ .comment       0x00000024       0x12 main.o
+ .comment       0x00000036       0x12 ../../hardware/hardware.o
+ .comment       0x00000048       0x12 ../../hardware/sys.o
+ .comment       0x0000005a       0x12 ../../hardware/system/setup_cpu.o
+ .comment       0x0000006c       0x12 ../../hardware/system/syscall.o
+ .comment       0x0000007e       0x12 ../../hardware/system/reset_cpu.o
+ .comment       0x00000090       0x12 ../../hardware/system/idle_hook.o
+ .comment       0x000000a2       0x12 ../../modul/FreeRTOS_Source/queue.o
+ .comment       0x000000b4       0x12 ../../modul/FreeRTOS_Source/tasks.o
+ .comment       0x000000c6       0x12 ../../modul/FreeRTOS_Source/portable/GCC/ARM7_LPC23xx/port.o
+ .comment       0x000000d8       0x12 ../../modul/FreeRTOS_Source/list.o
+ .comment       0x000000ea       0x12 ../../modul/FreeRTOS_Source/portable/MemMang/heap_2.o
+ .comment       0x000000fc       0x12 ../../modul/GPIO/gpio.o
+ .comment       0x0000010e       0x12 ../../app/ap_led1.o
+ .comment       0x00000120       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .comment       0x00000132       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memset.o)
+ .comment       0x00000144       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o)
+ .comment       0x00000156       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strlen.o)
+ .comment       0x00000168       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strncpy.o)
+ .comment       0x0000017a       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o)
+ .comment       0x0000018c       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+ .comment       0x0000019e       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memchr.o)
+ .comment       0x000001b0       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memmove.o)
+ .comment       0x000001c2       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o)
+ .comment       0x000001d4       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o)
+ .comment       0x000001e6       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fflush.o)
+ .comment       0x000001f8       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o)
+ .comment       0x0000020a       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(freer.o)
+ .comment       0x0000021c       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fwalk.o)
+ .comment       0x0000022e       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(makebuf.o)
+ .comment       0x00000240       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+ .comment       0x00000252       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mlock.o)
+ .comment       0x00000264       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(stdio.o)
+ .comment       0x00000276       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+ .comment       0x00000288       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .comment       0x0000029a       0x12 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+
+.debug_abbrev   0x00000000     0x2092
+ .debug_abbrev  0x00000000       0x99 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_abbrev  0x00000099       0x9a /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memset.o)
+ .debug_abbrev  0x00000133      0x193 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o)
+ .debug_abbrev  0x000002c6       0x8b /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strlen.o)
+ .debug_abbrev  0x00000351       0x8d /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strncpy.o)
+ .debug_abbrev  0x000003de      0x1b4 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o)
+ .debug_abbrev  0x00000592      0x157 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+ .debug_abbrev  0x000006e9       0xb5 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memchr.o)
+ .debug_abbrev  0x0000079e       0x99 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memmove.o)
+ .debug_abbrev  0x00000837      0x1c3 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o)
+ .debug_abbrev  0x000009fa      0x170 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o)
+ .debug_abbrev  0x00000b6a      0x17f /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fflush.o)
+ .debug_abbrev  0x00000ce9      0x24a /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o)
+ .debug_abbrev  0x00000f33      0x1d9 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(freer.o)
+ .debug_abbrev  0x0000110c      0x1e3 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fwalk.o)
+ .debug_abbrev  0x000012ef      0x1a8 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(makebuf.o)
+ .debug_abbrev  0x00001497      0x216 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+ .debug_abbrev  0x000016ad      0x16a /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mlock.o)
+ .debug_abbrev  0x00001817      0x1aa /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(stdio.o)
+ .debug_abbrev  0x000019c1      0x3e4 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+ .debug_abbrev  0x00001da5      0x15f /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_abbrev  0x00001f04      0x18e /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+
+.debug_info     0x00000000     0xb839
+ .debug_info    0x00000000      0x10e /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_info    0x0000010e      0x112 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memset.o)
+ .debug_info    0x00000220      0xa13 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o)
+ .debug_info    0x00000c33       0xd6 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strlen.o)
+ .debug_info    0x00000d09      0x127 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strncpy.o)
+ .debug_info    0x00000e30      0xa5f /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o)
+ .debug_info    0x0000188f      0x922 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+ .debug_info    0x000021b1      0x133 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memchr.o)
+ .debug_info    0x000022e4      0x13f /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memmove.o)
+ .debug_info    0x00002423      0xbc7 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o)
+ .debug_info    0x00002fea      0x93a /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o)
+ .debug_info    0x00003924      0x974 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fflush.o)
+ .debug_info    0x00004298      0xb67 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o)
+ .debug_info    0x00004dff      0xbb5 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(freer.o)
+ .debug_info    0x000059b4      0xad9 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fwalk.o)
+ .debug_info    0x0000648d      0xad9 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(makebuf.o)
+ .debug_info    0x00006f66      0xcbc /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+ .debug_info    0x00007c22      0x93c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mlock.o)
+ .debug_info    0x0000855e      0xa74 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(stdio.o)
+ .debug_info    0x00008fd2     0x15d2 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+ .debug_info    0x0000a5a4      0x913 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_info    0x0000aeb7      0x982 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+
+.debug_line     0x00000000     0x1eff
+ .debug_line    0x00000000       0xc9 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_line    0x000000c9       0xd5 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memset.o)
+ .debug_line    0x0000019e      0x13a /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o)
+ .debug_line    0x000002d8       0xb8 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strlen.o)
+ .debug_line    0x00000390       0xd0 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strncpy.o)
+ .debug_line    0x00000460      0x205 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o)
+ .debug_line    0x00000665      0x104 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+ .debug_line    0x00000769       0xde /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memchr.o)
+ .debug_line    0x00000847       0xd0 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memmove.o)
+ .debug_line    0x00000917      0x1be /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o)
+ .debug_line    0x00000ad5      0x185 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o)
+ .debug_line    0x00000c5a      0x183 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fflush.o)
+ .debug_line    0x00000ddd      0x1e4 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o)
+ .debug_line    0x00000fc1      0x185 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(freer.o)
+ .debug_line    0x00001146      0x198 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fwalk.o)
+ .debug_line    0x000012de      0x1a0 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(makebuf.o)
+ .debug_line    0x0000147e      0x255 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+ .debug_line    0x000016d3      0x116 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mlock.o)
+ .debug_line    0x000017e9      0x196 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(stdio.o)
+ .debug_line    0x0000197f      0x2e9 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+ .debug_line    0x00001c68      0x113 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_line    0x00001d7b      0x184 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+
+.debug_frame    0x00000000      0x894
+ .debug_frame   0x00000000       0x28 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_frame   0x00000028       0x2c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memset.o)
+ .debug_frame   0x00000054       0x44 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o)
+ .debug_frame   0x00000098       0x2c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strlen.o)
+ .debug_frame   0x000000c4       0x30 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strncpy.o)
+ .debug_frame   0x000000f4       0x3c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o)
+ .debug_frame   0x00000130       0x38 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memchr.o)
+ .debug_frame   0x00000168       0x2c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memmove.o)
+ .debug_frame   0x00000194       0x3c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o)
+ .debug_frame   0x000001d0       0x2c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o)
+ .debug_frame   0x000001fc       0x2c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fflush.o)
+ .debug_frame   0x00000228      0x130 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o)
+ .debug_frame   0x00000358       0x54 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(freer.o)
+ .debug_frame   0x000003ac       0x5c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fwalk.o)
+ .debug_frame   0x00000408       0x30 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(makebuf.o)
+ .debug_frame   0x00000438       0x3c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+ .debug_frame   0x00000474       0x30 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mlock.o)
+ .debug_frame   0x000004a4       0x80 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(stdio.o)
+ .debug_frame   0x00000524      0x30c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+ .debug_frame   0x00000830       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_frame   0x00000850       0x44 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+
+.debug_loc      0x00000000     0x3aef
+ .debug_loc     0x00000000      0x151 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_loc     0x00000151      0x15f /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memset.o)
+ .debug_loc     0x000002b0       0xcd /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o)
+ .debug_loc     0x0000037d       0x5b /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strlen.o)
+ .debug_loc     0x000003d8      0x1a1 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strncpy.o)
+ .debug_loc     0x00000579      0x38f /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o)
+ .debug_loc     0x00000908      0x1b5 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memchr.o)
+ .debug_loc     0x00000abd      0x1ca /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memmove.o)
+ .debug_loc     0x00000c87      0xad5 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o)
+ .debug_loc     0x0000175c       0x48 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o)
+ .debug_loc     0x000017a4       0xe4 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fflush.o)
+ .debug_loc     0x00001888      0x26a /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o)
+ .debug_loc     0x00001af2      0x419 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(freer.o)
+ .debug_loc     0x00001f0b      0x263 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fwalk.o)
+ .debug_loc     0x0000216e       0xb2 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(makebuf.o)
+ .debug_loc     0x00002220      0xa5e /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+ .debug_loc     0x00002c7e      0x231 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(stdio.o)
+ .debug_loc     0x00002eaf      0xb5e /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+ .debug_loc     0x00003a0d       0xe2 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+
+.debug_pubnames
+                0x00000000      0x5d5
+ .debug_pubnames
+                0x00000000       0x1d /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_pubnames
+                0x0000001d       0x1d /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memset.o)
+ .debug_pubnames
+                0x0000003a       0x27 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o)
+ .debug_pubnames
+                0x00000061       0x1d /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strlen.o)
+ .debug_pubnames
+                0x0000007e       0x1e /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strncpy.o)
+ .debug_pubnames
+                0x0000009c       0x21 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o)
+ .debug_pubnames
+                0x000000bd       0x39 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+ .debug_pubnames
+                0x000000f6       0x1d /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memchr.o)
+ .debug_pubnames
+                0x00000113       0x1e /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memmove.o)
+ .debug_pubnames
+                0x00000131       0x21 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o)
+ .debug_pubnames
+                0x00000152       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o)
+ .debug_pubnames
+                0x00000172       0x1d /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fflush.o)
+ .debug_pubnames
+                0x0000018f       0xdb /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o)
+ .debug_pubnames
+                0x0000026a       0x31 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(freer.o)
+ .debug_pubnames
+                0x0000029b       0x2e /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fwalk.o)
+ .debug_pubnames
+                0x000002c9       0x21 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(makebuf.o)
+ .debug_pubnames
+                0x000002ea       0xce /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+ .debug_pubnames
+                0x000003b8       0x38 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mlock.o)
+ .debug_pubnames
+                0x000003f0       0x44 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(stdio.o)
+ .debug_pubnames
+                0x00000434      0x158 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+ .debug_pubnames
+                0x0000058c       0x1e /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_pubnames
+                0x000005aa       0x2b /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+
+.debug_aranges  0x00000000      0x2a0
+ .debug_aranges
+                0x00000000       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_aranges
+                0x00000020       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memset.o)
+ .debug_aranges
+                0x00000040       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o)
+ .debug_aranges
+                0x00000060       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strlen.o)
+ .debug_aranges
+                0x00000080       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strncpy.o)
+ .debug_aranges
+                0x000000a0       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o)
+ .debug_aranges
+                0x000000c0       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memchr.o)
+ .debug_aranges
+                0x000000e0       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memmove.o)
+ .debug_aranges
+                0x00000100       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o)
+ .debug_aranges
+                0x00000120       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o)
+ .debug_aranges
+                0x00000140       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fflush.o)
+ .debug_aranges
+                0x00000160       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o)
+ .debug_aranges
+                0x00000180       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(freer.o)
+ .debug_aranges
+                0x000001a0       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fwalk.o)
+ .debug_aranges
+                0x000001c0       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(makebuf.o)
+ .debug_aranges
+                0x000001e0       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+ .debug_aranges
+                0x00000200       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mlock.o)
+ .debug_aranges
+                0x00000220       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(stdio.o)
+ .debug_aranges
+                0x00000240       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+ .debug_aranges
+                0x00000260       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_aranges
+                0x00000280       0x20 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+
+.debug_str      0x00000000     0x12f4
+ .debug_str     0x00000000       0xdd /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+                                 0xfd (size before relaxing)
+ .debug_str     0x000000dd       0xb1 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memset.o)
+                                0x147 (size before relaxing)
+ .debug_str     0x0000018e      0x42a /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(puts.o)
+                                0x51e (size before relaxing)
+ .debug_str     0x000005b8       0x53 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strlen.o)
+                                0x146 (size before relaxing)
+ .debug_str     0x0000060b       0x4f /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(strncpy.o)
+                                0x15d (size before relaxing)
+ .debug_str     0x0000065a       0x67 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o)
+                                0x53a (size before relaxing)
+ .debug_str     0x000006c1       0xb9 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                                0x4e3 (size before relaxing)
+ .debug_str     0x0000077a       0x67 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memchr.o)
+                                0x154 (size before relaxing)
+ .debug_str     0x000007e1       0x58 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(memmove.o)
+                                0x166 (size before relaxing)
+ .debug_str     0x00000839      0x15d /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o)
+                                0x598 (size before relaxing)
+ .debug_str     0x00000996       0x4f /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(wsetup.o)
+                                0x4df (size before relaxing)
+ .debug_str     0x000009e5       0x4c /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fflush.o)
+                                0x4ef (size before relaxing)
+ .debug_str     0x00000a31      0x10d /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(findfp.o)
+                                0x5c9 (size before relaxing)
+ .debug_str     0x00000b3e       0xdf /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(freer.o)
+                                0x618 (size before relaxing)
+ .debug_str     0x00000c1d       0x69 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fwalk.o)
+                                0x50a (size before relaxing)
+ .debug_str     0x00000c86      0x11f /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(makebuf.o)
+                                0x5c6 (size before relaxing)
+ .debug_str     0x00000da5       0xd0 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+                                0x6c6 (size before relaxing)
+ .debug_str     0x00000e75       0x78 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mlock.o)
+                                0x4ec (size before relaxing)
+ .debug_str     0x00000eed       0x74 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(stdio.o)
+                                0x512 (size before relaxing)
+ .debug_str     0x00000f61      0x297 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)
+                                0x7d3 (size before relaxing)
+ .debug_str     0x000011f8       0xa1 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+                                0x4cb (size before relaxing)
+ .debug_str     0x00001299       0x5b /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fclose.o)
+                                0x4eb (size before relaxing)
+
+.debug_ranges   0x00000000      0x2e0
+ .debug_ranges  0x00000000       0x18 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fvwrite.o)
+ .debug_ranges  0x00000018      0x110 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(reallocr.o)
+ .debug_ranges  0x00000128       0x90 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(fwalk.o)
+ .debug_ranges  0x000001b8       0x80 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(mallocr.o)
+ .debug_ranges  0x00000238       0xa8 /home/mamang/Documents/RTOS/RTOS_COBA/modul/TOOLCHAIN/bin/../lib/gcc/arm-elf/4.1.0/../../../../arm-elf/lib/thumb/interwork/libc.a(syscalls.o)

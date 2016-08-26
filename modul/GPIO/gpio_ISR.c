@@ -1,0 +1,753 @@
+/*
+ * gpio_ISR.c
+ *
+ *  Created on: Dec 9, 2008
+ *      Author: jadid
+ *
+ *      ini harus dicompile pada mode ARM
+ * 
+ *  11 Sept 2009
+ * 	handler untuk GPIO input kontrol (status saja)
+ * 	
+ */
+
+/* Scheduler includes. */
+#include "FreeRTOS.h"
+#include "queue.h"
+#include "task.h"
+#include "semphr.h"
+#include "gpio.h"
+#include "lpc23xx.h"
+
+#ifndef __GPIO_ISR__
+#define __GPIO_ISR__
+
+#include "hardware.h"
+#include "sys.h"
+
+// tes konter
+//#define LED_UTAMA	BIT(27)
+
+//#include "../../app/monita/monita_uip.h"
+//#include "monita/monita_uip.h"
+
+#ifdef BOARD_TAMPILAN
+//#include "../tampilan/tampilan.h"
+#endif
+
+#ifdef TAMPILAN_LPC_4
+extern xSemaphoreHandle keypad_sem;
+#endif
+
+#ifdef PAKAI_KONTROL_RTC
+void rtc_ISR_Wrapper (void) __attribute__ ((naked));
+void rtc_ISR_Handler (void);
+
+extern unsigned char flagRTCc;
+
+void rtc_ISR_Handler (void)	{
+	
+//	flagRTCc = 100;
+//	printf("IRQ RTC");
+
+//	RTC_ILR = RTC_ILR_RTCCIF;
+//	RTC_ILR = BIT(1) | BIT(0);
+
+	if (RTC_ILR & RTC_ILR_RTCCIF)	{		// counter irq
+		//if (RTC_CIIR==)
+		flagRTCc = 1;
+		RTC_ILR = RTC_ILR_RTCCIF;
+	}
+	if (RTC_ILR & RTC_ILR_RTCALF)	{
+		flagRTCc = 2;
+		RTC_ILR = RTC_ILR_RTCALF;
+	}
+	//FIO0CLR = LED_UTAMA;
+	VICVectAddr = (unsigned portLONG) 0;
+}
+
+void rtc_ISR_Wrapper (void)	{
+	// cek apakah dari powerdown dari memRTC
+	//while(!cek_main_clk());
+	//FIO0CLR = LED_UTAMA;
+	//init_PLLnya();
+	
+	portSAVE_CONTEXT ();
+	#ifdef PAKAI_MODE_POWER
+	if (status_power()!=0)	{
+		flagRTCc = 66;
+	} else	
+	#endif
+		rtc_ISR_Handler ();
+
+	
+	portRESTORE_CONTEXT ();
+}
+#endif
+
+#ifdef PAKAI_TIMER_2
+void timer2_ISR_Wrapper( void )
+{
+	portSAVE_CONTEXT();
+
+	#if ( DEBUG_KONTER == 1) 
+	togle_led_konter();
+	#endif
+	
+	timer2_ISR_Handler();
+
+	portRESTORE_CONTEXT();
+}
+
+void timer2_ISR_Handler( void )
+{
+	iTim2 = T2TC;
+	T2IR	= TxIR_MR0_Interrupt;   		// clear interrupt by writing an IR-bit
+	//T2TCR	= TxTCR_Counter_Reset;
+	T2TCR  |= TxTCR_Counter_Enable;         // enable timer 2
+
+	flagT2 = 1;
+	T2TC = 0;
+	
+	/* Clear the ISR in the VIC. */
+	VICVectAddr = 0;
+}
+#endif
+
+
+#if defined(BOARD_KOMON_KONTER) || defined(BOARD_KOMON_KONTER_3_0)
+struct t2_konter konter;
+#endif
+
+void gpio_ISR_Wrapper( void ) __attribute__ ((naked));
+void gpio_ISR_Handler( void );
+
+void timer1_ISR_Wrapper( void ) __attribute__ ((naked));
+void timer1_ISR_Handler( void );
+void timer1_ISR_KONTROL( void );
+
+void gpio_ISR_Wrapper_keypad( void ) __attribute__ ((naked));
+void gpio_ISR_keypad_Handler( void );
+
+void timer2_ISR_Wrapper( void ) __attribute__ ((naked));
+void timer2_ISR_Handler( void );
+
+//void set_konter(int st, unsigned int period);
+
+#if defined(BOARD_KOMON_KONTER) || defined(BOARD_KOMON_KONTER_3_0)
+void gpio_ISR_Wrapper( void )
+{
+	/* Save the context of the interrupted task. */
+	portSAVE_CONTEXT();
+
+	#if ( DEBUG_KONTER == 1) 
+	togle_led_konter();
+	#endif
+	
+	/* Call the handler.  This must be a separate function from the wrapper
+	to ensure the correct stack frame is set up. */
+	
+#if (PAKAI_KONTROL == 1)
+	/* 11 Sept 2009, jika GPIO hanya untuk status on off */
+	gpio_ISR_KONTROL();
+
+#else
+	
+	gpio_ISR_Handler();
+#endif
+	/* Restore the context of whichever task is going to run next. */
+	portRESTORE_CONTEXT();
+}
+#endif
+
+#ifdef TAMPILAN_LPC_4
+void gpio_ISR_Wrapper_keypad( void )
+{
+	/* Save the context of the interrupted task. */
+	portSAVE_CONTEXT();
+
+	/* Call the handler.  This must be a separate function from the wrapper
+	to ensure the correct stack frame is set up. */
+	gpio_ISR_keypad_Handler();
+
+	/* Restore the context of whichever task is going to run next. */
+	portRESTORE_CONTEXT();
+}
+#endif
+
+#if defined(BOARD_KOMON_KONTER) || defined(BOARD_KOMON_KONTER_3_0)
+void timer1_ISR_Wrapper( void )
+{
+	/* Save the context of the interrupted task. */
+	portSAVE_CONTEXT();
+	
+	/* Call the handler.  This must be a separate function from the wrapper
+	to ensure the correct stack frame is set up. */
+	timer1_ISR_Handler();
+
+	/* Restore the context of whichever task is going to run next. */
+	portRESTORE_CONTEXT();
+}
+
+extern unsigned char status_konter[KANALNYA];
+
+#ifdef PAKAI_PUSHBUTTON
+	extern unsigned int debound[KANALNYA];
+#endif
+
+void gpio_ISR_Handler( void )
+{
+	int t=0, zz=0;
+	unsigned int new_period;
+	konter.global_hit++;
+
+	new_period = T1TC;
+	//cek sumber
+
+	if (IO2_INT_STAT_F & kont_10) {
+		t = 9; zz = status_konter[t];
+		if (zz==0) {
+			set_konter(t, new_period);
+		} else if (zz==1) {
+			set_konter_onoff(t, 1);
+		#ifdef PAKAI_PILIHAN_FLOW
+		} else if (zz==100)	{
+			//FIO0PIN ^= LED_UTAMA;
+			set_konter_flow_pilih(t, konter.t_konter[t-1].onoff);
+		#endif
+		}
+		
+		IO2_INT_CLR = kont_10;
+	} 
+	if (IO2_INT_STAT_R & kont_10)	{
+		t = 9;	zz = status_konter[t];
+		if (zz==1) {
+			set_konter_onoff(t, 0);
+		}
+		IO2_INT_CLR = kont_10;
+	}
+
+
+	if (IO2_INT_STAT_F & kont_9) {
+		t = 8;	zz = status_konter[t];
+		if (zz==0) {
+			set_konter(t, new_period);
+		} else if (zz==1 || zz==3) {
+			set_konter_onoff(t, 1);		
+		#ifdef PAKAI_PILIHAN_FLOW
+		} else if (zz==202)	{
+			set_konter_flow_pilih(t, zz);
+		#endif
+		}
+		IO2_INT_CLR = kont_9;
+	} 
+	if (IO2_INT_STAT_R & kont_9)	{
+		t = 8;	zz = status_konter[t];
+		if (zz==1) {
+			set_konter_onoff(t, 0);
+		#ifdef PAKAI_PILIHAN_FLOW
+		} else if (zz==3)	{
+			set_konter_onoff(t, 0);
+		#endif
+		}
+		IO2_INT_CLR = kont_9;
+	}
+
+	if (IO2_INT_STAT_F & kont_8) {		// buat pulsa
+		t = 7; zz = status_konter[t];
+		if (status_konter[t]==0) {
+			set_konter(t, new_period);
+		} else if (status_konter[t]==1) {
+			set_konter_onoff(t, 1);
+		#ifdef PAKAI_PUSHBUTTON
+		} else if (status_konter[t]==2) {
+			if (debound[t]==0) {
+				debound[t] = DELAY_DEBOUND;
+				#ifdef PAKAI_RELAY
+					toogle_selenoid(t+1);
+				#endif
+			}
+		#endif
+		#ifdef PAKAI_PILIHAN_FLOW
+		} else if (zz==100) {
+			set_konter_flow_pilih(t, konter.t_konter[t-1].onoff);
+		} else if (zz==201)	{
+			set_konter_onoff(t, 1);
+		#endif
+		}
+		IO2_INT_CLR = kont_8;
+	} 
+	if (IO2_INT_STAT_R & kont_8)	{
+		t = 7;  zz = status_konter[t];
+		if (zz==1) {
+			set_konter_onoff(t, 0);
+		#ifdef PAKAI_PILIHAN_FLOW
+		} else if (zz==3)	{
+			set_konter_onoff(t, 0);
+		} else if (zz==4)	{
+			set_konter_onoff(t, 0);
+		} else if (zz==201)	{
+			set_konter_onoff(t, 0);
+		#endif
+		}
+		IO2_INT_CLR = kont_8;
+	}
+	
+	
+	if (IO2_INT_STAT_F & kont_7) {
+		t = 6; zz = status_konter[t];
+		if (zz==0) {
+			set_konter(t, new_period);
+		} else if (zz==1) {
+			set_konter_onoff(t, 1);
+		#ifdef PAKAI_PUSHBUTTON
+		} else if (zz==2) {
+			if (debound[t]==0) {
+				debound[t] = DELAY_DEBOUND;
+				#ifdef PAKAI_RELAY
+					toogle_selenoid(t+1);
+				#endif
+			}
+		#endif
+		#ifdef PAKAI_PILIHAN_FLOW
+		} else if (zz==3)	{
+			set_konter_onoff(t, 1);
+		} else if (zz==4)	{
+			set_konter_onoff(t, 1);
+		} else if (zz==201)	{
+			set_konter_onoff(t, 1);
+		#endif
+		}
+		IO2_INT_CLR = kont_7;
+	} 
+	if (IO2_INT_STAT_R & kont_7)	{
+		t = 6; zz = status_konter[t];
+		if (zz==1) {
+			set_konter_onoff(t, 0);
+		#ifdef PAKAI_PILIHAN_FLOW
+		} else if (zz==3)	{
+			set_konter_onoff(t, 0);
+		} else if (zz==4)	{
+			set_konter_onoff(t, 0);
+		} else if (zz==201)	{
+			set_konter_onoff(t, 0);
+		#endif
+		}
+		IO2_INT_CLR = kont_7;
+	}
+
+
+	if (IO2_INT_STAT_F & kont_6) {
+		t = 5;  zz = status_konter[t];
+		if (zz==0) {
+			set_konter(t, new_period);
+		} else if (zz==1) {
+			set_konter_onoff(t, 1);
+		#ifdef PAKAI_PUSHBUTTON
+		} else if (zz==2) {
+			if (debound[t]==0) {
+				debound[t] = DELAY_DEBOUND;
+				#ifdef PAKAI_RELAY
+					toogle_selenoid(t+1);
+				#endif
+			}
+		#endif
+		#ifdef PAKAI_PILIHAN_FLOW
+		} else if (zz==3)	{
+			set_konter_onoff(t, 1);
+		} else if (zz==202)	{
+			set_konter_flow_pilih(t, zz);
+		#endif
+		}
+		IO2_INT_CLR = kont_6;
+	} 
+	if (IO2_INT_STAT_R & kont_6)	{
+		t = 5;  zz = status_konter[t];
+		if (zz==1) {
+			set_konter_onoff(t, 0);
+		#ifdef PAKAI_PILIHAN_FLOW
+		} else if (zz==100) {
+			set_konter_flow_pilih(t, konter.t_konter[t-1].onoff);
+		#endif
+		}
+		IO2_INT_CLR = kont_6;
+	}
+	
+	#ifdef BOARD_KOMON_KONTER_3_1
+		if (IO2_INT_STAT_F & kont_5)	{
+			t = 4;  zz = status_konter[t];
+			if (zz==0) {
+				set_konter(t, new_period);
+			} else if (zz==1 || zz==3) {
+				set_konter_onoff(t, 1);
+			#ifdef PAKAI_PUSHBUTTON
+			} else if (zz==2) {
+				set_konter_onoff(t, 1);
+				if (debound[t]==0) {
+					debound[t] = DELAY_DEBOUND;
+					#ifdef PAKAI_RELAY
+						toogle_selenoid(t+1);
+					#endif
+				}
+			#endif
+			#ifdef PAKAI_PILIHAN_FLOW
+			} else if (zz==100) {
+				set_konter_flow_pilih(t, konter.t_konter[t-1].onoff);
+			} else if (zz==201)	{
+				set_konter_onoff(t, 1);
+			#endif
+			}
+			//set_konter(t, new_period);
+			IO2_INT_CLR = kont_5;
+		}
+		if (IO2_INT_STAT_R & kont_5)	{
+			t = 4;
+			if (status_konter[t]==1) {
+				set_konter_onoff(t, 0);
+			#ifdef PAKAI_PILIHAN_FLOW
+			} else if (zz==3)	{
+				set_konter_onoff(t, 0);
+			} else if (zz==4)	{
+				set_konter_onoff(t, 0);
+			} else if (zz==201)	{
+				set_konter_onoff(t, 0);
+			#endif
+			}
+			IO2_INT_CLR = kont_5;
+		}
+		
+		if (IO2_INT_STAT_F & kont_4)	{
+			t = 3;  zz = status_konter[t];
+			//set_konter(t, new_period);
+			if (zz==0) {
+				set_konter(t, new_period);
+			} else if (zz==1) {
+				set_konter_onoff(t, 1);
+			#ifdef PAKAI_PUSHBUTTON
+			} else if (zz==2) {
+				if (debound[t]==0) {
+					debound[t] = DELAY_DEBOUND;
+					#ifdef PAKAI_RELAY
+						toogle_selenoid(t+1);
+					#endif
+				}
+			#endif
+			#ifdef PAKAI_PILIHAN_FLOW
+			} else if (zz==3)	{
+				set_konter_onoff(t, 1);
+			} else if (zz==4)	{
+				set_konter_onoff(t, 1);
+			} else if (zz==201)	{
+				set_konter_onoff(t, 1);
+			#endif
+			}		
+			IO2_INT_CLR = kont_4;
+		}
+		if (IO2_INT_STAT_R & kont_4)	{
+			t = 3; zz = status_konter[t];
+			if (zz==1) {
+				set_konter_onoff(t, 0);
+			#ifdef PAKAI_PILIHAN_FLOW
+			} else if (zz==3)	{
+				set_konter_onoff(t, 0);
+			} else if (zz==4)	{
+				set_konter_onoff(t, 0);
+			} else if (zz==201)	{
+				set_konter_onoff(t, 0);
+			#endif
+			}
+			IO2_INT_CLR = kont_4;
+		}
+
+		
+		if (IO2_INT_STAT_F & kont_3)	{
+			t = 2; zz = status_konter[t];
+			//set_konter(t, new_period);
+			if (zz==0) {
+				set_konter(t, new_period);
+			} else if (zz==1) {
+				set_konter_onoff(t, 1);
+			#ifdef PAKAI_PUSHBUTTON
+			} else if (zz==2) {
+				if (debound[t]==0) {
+					debound[t] = DELAY_DEBOUND;
+					#ifdef PAKAI_RELAY
+						toogle_selenoid(t+1);
+					#endif
+				}
+			#endif
+			#ifdef PAKAI_PILIHAN_FLOW
+			} else if (zz==3)	{
+				set_konter_onoff(t, 1);
+			} else if (zz==202)	{
+				set_konter_flow_pilih(t, zz);
+			#endif
+			}
+			IO2_INT_CLR = kont_3;
+		}
+		if (IO2_INT_STAT_R & kont_3)	{
+			t = 2; zz = status_konter[t];
+			if (zz==1) {
+				set_konter_onoff(t, 0);
+			#ifdef PAKAI_PILIHAN_FLOW
+			} else if (zz==3)	{
+				set_konter_onoff(t, 0);
+			} else if (zz==4)	{
+				set_konter_onoff(t, 0);
+			} else if (zz==201)	{
+				set_konter_onoff(t, 0);
+			#endif
+			}
+			IO2_INT_CLR = kont_3;
+		}
+		
+		if (IO2_INT_STAT_F & kont_2)	{
+			t = 1; zz = status_konter[t];
+			//set_konter(t, new_period);
+			if (zz==0) {
+				set_konter(t, new_period);
+			} else if (zz==1) {
+				set_konter_onoff(t, 1);
+			#ifdef PAKAI_PUSHBUTTON
+			} else if (zz==2) {
+				if (debound[t]==0) {
+					debound[t] = DELAY_DEBOUND;
+					#ifdef PAKAI_RELAY
+						toogle_selenoid(t+1);
+					#endif
+				}
+			#endif
+			#ifdef PAKAI_PILIHAN_FLOW
+			} else if (zz==100) {
+				set_konter_flow_pilih(t, konter.t_konter[t-1].onoff);
+			} else if (zz==201)	{
+				set_konter_onoff(t, 1);
+			#endif	
+			}
+			IO2_INT_CLR = kont_2;
+		}
+		if (IO2_INT_STAT_R & kont_2)	{
+			t = 1;  zz = status_konter[t];
+			if (zz==1) {
+				set_konter_onoff(t, 0);
+			#ifdef PAKAI_PILIHAN_FLOW
+			} else if (zz==3)	{
+				set_konter_onoff(t, 0);
+			} else if (zz==4)	{
+				set_konter_onoff(t, 0);
+			} else if (zz==201)	{
+				set_konter_onoff(t, 0);
+			#endif
+			}
+			IO2_INT_CLR = kont_2;
+		}
+		
+		if (IO2_INT_STAT_F & kont_1)	{
+			t = 0; zz = status_konter[t];
+			//set_konter(t, new_period);
+			if (zz==0) {
+				set_konter(t, new_period);
+			} else if (zz==1) {
+				set_konter_onoff(t, 1);
+			#ifdef PAKAI_PUSHBUTTON
+			} else if (status_konter[t]==2) {
+				if (debound[t]==0) {
+					debound[t] = DELAY_DEBOUND;
+					#ifdef PAKAI_RELAY
+						toogle_selenoid(t+1);
+					#endif
+				}
+			#endif
+			#ifdef PAKAI_PILIHAN_FLOW
+			} else if (zz==3)	{
+				set_konter_onoff(t, 1);
+			} else if (zz==4)	{
+				set_konter_onoff(t, 1);
+			} else if (zz==201)	{
+				set_konter_onoff(t, 1);
+			#endif
+			}
+			IO2_INT_CLR = kont_1;
+		}
+		if (IO2_INT_STAT_R & kont_1)	{
+			t = 0;	zz = status_konter[t];
+			if (zz==1) {
+				set_konter_onoff(t, 0);
+			#ifdef PAKAI_PILIHAN_FLOW
+			} else if (zz==3)	{
+				set_konter_onoff(t, 0);
+			} else if (zz==4)	{
+				set_konter_onoff(t, 0);
+			} else if (zz==201)	{
+				set_konter_onoff(t, 0);
+			#endif
+			}
+			IO2_INT_CLR = kont_1;
+		}
+	#endif
+
+	/*
+	new_period = T1TC;
+	if (new_period > konter.t_konter[t].last_period)
+	{
+			konter.t_konter[t].beda = (new_period -
+					konter.t_konter[t].last_period) * 50;	// 1 clock 50 nanosecond
+	}
+	else	// sudah overflow
+	{
+		konter.t_konter[t].beda = (new_period +
+			(0xFFFFFFFF - konter.t_konter[t].last_period)) * 50;	// 1 clock 50 nanosecond
+
+	}
+	konter.t_konter[t].hit++;
+	konter.t_konter[t].last_period = new_period;
+	*/
+
+	// clear GPIO interrupt
+	/*
+	if (t == 9)
+	{
+		IO2_INT_CLR = kont_10;
+	}
+	else if (t == 8)
+	{
+		IO2_INT_CLR = kont_9;
+	}
+	else if (t == 7)
+	{
+		IO2_INT_CLR = kont_8;
+	}
+	else if (t == 6)
+	{
+		IO2_INT_CLR = kont_7;
+	}
+	else if (t == 5)
+	{
+		IO2_INT_CLR = kont_6;
+	} */
+	/* Clear the ISR in the VIC. */
+	VICVectAddr = 0;
+}
+
+void timer1_ISR_Handler( void )
+{
+	konter.ovflow++;
+
+	T1IR = TxIR_MR0_Interrupt;   // clear interrupt by writing an IR-bit
+
+	/* Clear the ISR in the VIC. */
+	VICVectAddr = 0;
+}
+
+/*
+void set_konter(int st, unsigned int period)
+{
+	//new_period = T1TC;
+	if (period > konter.t_konter[st].last_period)
+	{
+		konter.t_konter[st].beda = (period -
+			konter.t_konter[st].last_period) * 50;	// 1 clock 50 nanosecond
+	}
+	else	// sudah overflow
+	{
+		konter.t_konter[st].beda = (period +
+			(0xFFFFFFFF - konter.t_konter[st].last_period)) * 50;	// 1 clock 50 nanosecond
+
+	}
+	konter.t_konter[st].hit++;
+	konter.t_konter[st].last_period = period;
+}
+//*/
+#endif // KOMON_KONTER
+
+#ifdef TAMPILAN_LPC_4
+void gpio_ISR_keypad_Handler( void )
+{
+	static portBASE_TYPE xHigherPriorityTaskWoken;
+	 
+	if (IO2_INT_STAT_F & PF14)
+	{
+		//xSemaphoreGive( keypad_sem );		
+		xSemaphoreGiveFromISR( keypad_sem, &xHigherPriorityTaskWoken );
+		
+		IO2_INT_CLR = PF14;
+	}
+	
+	/* Clear the ISR in the VIC. */
+	VICVectAddr = 0;	
+}
+#endif
+
+#if (PAKAI_KONTROL == 1)
+/* ingat bahwa input sesuai dengan nomer kanal, bukan array */
+
+int stat_input[11];
+int jum_tutup;
+
+void gpio_ISR_KONTROL( void )
+{
+	//cek sumber
+	if (IO2_INT_STAT_F & kont_10)	// falling, pintu nutup, switch on
+	{
+		stat_input[10] = 1;
+		jum_tutup++;
+		
+		IO2_INT_CLR = kont_10;
+	}	
+	if (IO2_INT_STAT_R & kont_10)
+	{
+		stat_input[10] = 0;		// rising, pintu buka, swith off / open
+		jum_tutup++;
+		
+		IO2_INT_CLR = kont_10;
+	}
+	
+	
+	if (IO2_INT_STAT_F & kont_9) // armed on
+	{
+		stat_input[9] = 1;
+		
+		IO2_INT_CLR = kont_9;
+	}
+	if (IO2_INT_STAT_R & kont_9) // armed off
+	{
+		stat_input[9] = 0;
+		
+		IO2_INT_CLR = kont_9;
+	}
+	
+	
+	if (IO2_INT_STAT_F & kont_8)
+	{
+		stat_input[8] = 1;
+		
+		IO2_INT_CLR = kont_8;
+	}
+	if (IO2_INT_STAT_F & kont_7)
+	{
+		stat_input[7] = 1;
+		
+		IO2_INT_CLR = kont_7;
+	}
+	
+	
+	if (IO2_INT_STAT_F & kont_6) 
+	{
+		stat_input[6] = 1;
+		
+		IO2_INT_CLR = kont_6;
+	}
+	
+	if (IO2_INT_STAT_R & kont_6) 
+	{
+		stat_input[6] = 0;
+		
+		IO2_INT_CLR = kont_6;
+	}
+	
+	/* Clear the ISR in the VIC. */
+	VICVectAddr = 0;
+}
+#endif
+
+#endif
